@@ -1,7 +1,12 @@
 <template>
   <div class="dragArea"></div>
-  <div style="margin-top: 30px;">Hello World!!!</div>
+  <h1 class="text-3xl font-bold underline mt-[30px]">Hello world!</h1>
+  <Button size="small">按钮</Button>
 </template>
+
+<script setup lang="ts">
+import Button from "primevue/button";
+</script>
 
 <style scoped>
 .dragArea{
