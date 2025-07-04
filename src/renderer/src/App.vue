@@ -1,14 +1,29 @@
 <template>
   <div class="dragArea"></div>
-  <h1 class="text-3xl font-bold underline mt-[30px]">Hello world!</h1>
-  <Button size="small">按钮</Button>
+  <div class="content">
+    <SideBar/>
+    <div class="view"></div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import Button from "primevue/button";
+import SideBar from './components/sidebar.vue';
 </script>
 
 <style scoped>
+.view{
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-color: red;
+  margin-top: 40px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+.content{
+  display: flex;
+}
 .dragArea{
   position: fixed;
   top: 0;
