@@ -2,12 +2,16 @@
   <div class="dragArea"></div>
   <div class="content">
     <SideBar/>
-    <div class="view"></div>
+    <div class="view">
+      <Download v-if="store().page==Pages.download"/>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import SideBar from './components/sidebar.vue';
+import store, { Pages } from './store';
+import Download from './views/download.vue';
 </script>
 
 <style scoped>
